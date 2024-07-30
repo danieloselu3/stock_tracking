@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: POSITION_XYZ_BANK
+    description: contains the position profits for the XYZ bank
+
+    columns:
+      - name: PROFIT
+        description: contains the profits for the stock
+        tests:
+          - not_null
+      - name: PROFIT_PCT
+        description: contains the profit percentage for the stock
+        tests:
+          - not_null
+              

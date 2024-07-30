@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: xyz_bank
+    database: PORTFOLIO_TRACKING
+    schema: SOURCE_DATA
+
+    tables:
+      - name: ABC_BANK_POSITION
+        description: position at XYZ bank
+
+        columns:
+          - name: ACCOUNT_ID
+            description: holds information on the different account available
+
+            tests:
+              - not_null
+              

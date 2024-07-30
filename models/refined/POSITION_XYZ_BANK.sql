@@ -1,0 +1,5 @@
+SELECT 
+    *
+    , POSITION_VALUE - COST_BASE as PROFIT
+    , ROUND((PROFIT * 100)/COST_BASE, 4) as PROFIT_PCT
+FROM {{ source('xyz_bank', 'ABC_BANK_POSITION') }}
